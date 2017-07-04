@@ -1,0 +1,405 @@
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font-family: "Raleway", Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	background: #fff;
+	height: 900px;
+	font-weight: 400;
+	font-size: 15px;
+	color: #636363;
+	overflow-y: scroll;
+}
+
+@media screen and (min-width: 768px) {
+	section {
+		width: 400px;
+		height: auto;
+		padding-left: 40px;
+	}
+	
+	aside {
+		position: relative;
+		width: 400px;
+		top: -620px; 
+		left: 55%;
+		margin-bottom: -400px;
+	}
+	
+	#socialmedia{
+		font-size: 12px; 
+		width:480px;
+		height: 200px;
+		float:left;
+		padding: 40px 0;
+		background-repeat: no-repeat;   
+		background-position: center;
+	}
+	#link{
+		float:left;
+		padding: 10px;
+	}
+
+	img.icon {
+		width: 80%;
+	}
+	
+	a {
+		color: #333;
+		text-decoration: none;
+	}
+	
+	h1 {
+		clear: both;
+		font-size: 2em;
+		position: relative;
+	}
+
+
+	/* placeholder */
+	::-webkit-input-placeholder  { 
+		color: rgb(190, 188, 188); 
+		font-style: italic;
+	}
+	input:-moz-placeholder,
+	textarea:-moz-placeholder{ 
+		color: rgb(190, 188, 188);
+		font-style: italic;
+	} 
+	input {
+	  outline: none;
+	}
+
+	/* all the input except submit and checkbox */
+	#wrapper input:not([type="checkbox"]), #textarea {
+		width: 250px;
+		margin-top: 4px;
+		padding: 7px 5px 10px 32px;	
+		border: 1px solid rgb(178, 178, 178);
+		-webkit-appearance: textfield;
+		-webkit-box-sizing: content-box;
+		  -moz-box-sizing : content-box;
+			   box-sizing : content-box;
+		-webkit-border-radius: 3px;
+		   -moz-border-radius: 3px;
+				border-radius: 3px;
+		-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+		   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+				box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+		-webkit-transition: all 0.2s linear;
+		   -moz-transition: all 0.2s linear;
+			 -o-transition: all 0.2s linear;
+				transition: all 0.2s linear;
+	}
+	#wrapper input:not([type="checkbox"]):active,
+	#wrapper input:not([type="checkbox"]):focus, 
+	#textarea{
+		border: 1px solid rgba(91, 90, 90, 0.7);
+		background: rgba(238, 236, 240, 0.2);	
+		-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+		   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+				box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	} 
+
+	#textarea {
+		font-family: "Raleway","Myriad Pro",Arial,sans-serif;
+		font-size: 13px;
+	}
+	
+	#wrapper p.button input {
+		width: 100px;
+		cursor: pointer;	
+		background-color: #3a3a3a;
+		padding: 5px 5px;
+		font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+		color: #fff;
+		font-size: 24px;		
+		margin-bottom: 10px;	
+	}
+	#wrapper p.button input:hover{
+		background-color: #757575;
+	}
+	#wrapper p.button input:active,
+	#wrapper p.button input:focus{
+		background: rgb(40, 137, 154);
+		position: relative;
+		top: 1px;
+		border: 1px solid rgb(12, 76, 87);	
+	}
+	p.login.button,
+	p.signin.button{
+		text-align: left;
+		position: relative;
+		left: 285px;
+		margin: 5px 0;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	section {
+		width: 400px;
+		height: auto;
+		padding-left: 20px;
+	}
+	
+	aside {
+		position: relative;
+		width: 400px;
+		margin-bottom: -400px;
+		top: -520px; 
+		left: 60%;
+	}
+	
+	#socialmedia{
+		font-size: 12px; 
+		width:480px;
+		height: 200px;
+		float:left;
+		padding-top: 20px;
+		background-repeat: no-repeat;   
+		background-position: center;
+	}
+	#link{
+		float:left;
+		padding: 5px;
+	}
+
+	img.icon {
+		width: 60%;
+	}
+	
+	a {
+		color: #333;
+		text-decoration: none;
+	}
+	
+	h1 {
+		clear: both;
+		font-size: 1.5em;
+		position: relative;
+	}
+
+
+	/* placeholder */
+	::-webkit-input-placeholder  { 
+		color: rgb(190, 188, 188); 
+		font-style: italic;
+	}
+	input:-moz-placeholder,
+	textarea:-moz-placeholder{ 
+		color: rgb(190, 188, 188);
+		font-style: italic;
+	} 
+	input {
+	  outline: none;
+	}
+
+	/* all the input except submit and checkbox */
+	#wrapper input:not([type="checkbox"]), #textarea {
+		width: 150px;
+		margin-top: 4px;
+		padding: 3px 5px 3px 32px;	
+		border: 1px solid rgb(178, 178, 178);
+		-webkit-appearance: textfield;
+		-webkit-box-sizing: content-box;
+		  -moz-box-sizing : content-box;
+			   box-sizing : content-box;
+		-webkit-border-radius: 3px;
+		   -moz-border-radius: 3px;
+				border-radius: 3px;
+		-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+		   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+				box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+		-webkit-transition: all 0.2s linear;
+		   -moz-transition: all 0.2s linear;
+			 -o-transition: all 0.2s linear;
+				transition: all 0.2s linear;
+	}
+	#wrapper input:not([type="checkbox"]):active,
+	#wrapper input:not([type="checkbox"]):focus, 
+	#textarea{
+		border: 1px solid rgba(91, 90, 90, 0.7);
+		background: rgba(238, 236, 240, 0.2);	
+		-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+		   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+				box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	} 
+
+	#textarea {
+		font-family: "Raleway","Myriad Pro",Arial,sans-serif;
+		font-size: 13px;
+	}
+	
+	#wrapper p.button input {
+		width: 100px;
+		cursor: pointer;	
+		background-color: #3a3a3a;
+		padding: 5px 5px;
+		font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+		color: #fff;
+		font-size: 24px;		
+		margin-bottom: 10px;	
+	}
+	#wrapper p.button input:hover{
+		background-color: #757575;
+	}
+	#wrapper p.button input:active,
+	#wrapper p.button input:focus{
+		background: rgb(40, 137, 154);
+		position: relative;
+		top: 1px;
+		border: 1px solid rgb(12, 76, 87);	
+	}
+	p.login.button,
+	p.signin.button{
+		text-align: left;
+		position: relative;
+		left: 180px;
+		margin: 5px 0;
+	}
+	
+	.iframe {
+		width: 300px;
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	section {
+		position: relative;
+		top: 100px;
+		margin-top: -10px;
+		text-align: center;
+	}
+	
+	aside {
+		position: relative;
+		width: 400px;
+		top: 100px; 
+		left: 5%;
+		margin-bottom: 200px;
+		text-align: center;
+	}
+	
+	#socialmedia{
+		font-size: 12px; 
+		width:480px;
+		height: 200px;
+		background-color: white;
+		float:left;
+		padding-top: 20px;
+		background-repeat: no-repeat;   
+		background-position: center;
+	}
+	#link{
+		float:left;
+		padding: 5px;
+	}
+
+	img.icon {
+		width: 60%;
+	}
+	
+	a {
+		color: #333;
+		text-decoration: none;
+	}
+	
+	h1 {
+		clear: both;
+		font-size: 1.5em;
+		position: relative;
+	}
+
+
+	/* placeholder */
+	::-webkit-input-placeholder  { 
+		color: rgb(190, 188, 188); 
+		font-style: italic;
+	}
+	input:-moz-placeholder,
+	textarea:-moz-placeholder{ 
+		color: rgb(190, 188, 188);
+		font-style: italic;
+	} 
+	input {
+	  outline: none;
+	}
+
+	/* all the input except submit and checkbox */
+	#wrapper input:not([type="checkbox"]), #textarea {
+		width: 150px;
+		margin-top: 4px;
+		padding: 3px 5px 3px 32px;	
+		border: 1px solid rgb(178, 178, 178);
+		-webkit-appearance: textfield;
+		-webkit-box-sizing: content-box;
+		  -moz-box-sizing : content-box;
+			   box-sizing : content-box;
+		-webkit-border-radius: 3px;
+		   -moz-border-radius: 3px;
+				border-radius: 3px;
+		-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+		   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+				box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+		-webkit-transition: all 0.2s linear;
+		   -moz-transition: all 0.2s linear;
+			 -o-transition: all 0.2s linear;
+				transition: all 0.2s linear;
+	}
+	#wrapper input:not([type="checkbox"]):active,
+	#wrapper input:not([type="checkbox"]):focus, 
+	#textarea{
+		border: 1px solid rgba(91, 90, 90, 0.7);
+		background: rgba(238, 236, 240, 0.2);	
+		-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+		   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+				box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	} 
+
+	#textarea {
+		font-family: "Raleway","Myriad Pro",Arial,sans-serif;
+		font-size: 13px;
+	}
+	
+	#wrapper p.button input {
+		width: 100px;
+		cursor: pointer;	
+		background-color: #3a3a3a;
+		padding: 5px 5px;
+		font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+		color: #fff;
+		font-size: 24px;		
+		margin-bottom: 10px;	
+	}
+	#wrapper p.button input:hover{
+		background-color: #757575;
+	}
+	#wrapper p.button input:active,
+	#wrapper p.button input:focus{
+		background: rgb(40, 137, 154);
+		position: relative;
+		top: 1px;
+		border: 1px solid rgb(12, 76, 87);	
+	}
+	p.login.button,
+	p.signin.button{
+		text-align: left;
+		position: relative;
+		left: 180px;
+		margin: 5px 0;
+	}
+	
+	.iframe {
+		width: 350px;
+		height: 350px;
+	}
+}

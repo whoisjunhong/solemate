@@ -1,0 +1,265 @@
+body {
+    font-family: 'Raleway', Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+	section {
+		width: auto;
+		height: auto;
+	}
+
+	table {
+		border-collapse: collapse;
+		border-right: 1px solid #ddd;
+		border-left: 1px solid #ddd;
+		width: 90%;
+		margin-bottom: 100px;
+	}
+
+	.productTable {
+		display: block;
+		position: relative;
+		left: 5%;
+	}
+
+	td{
+		border-bottom: 1px solid #ddd;
+		padding: 8px;
+		text-align: left;
+	}
+
+	th {
+		background-color: #dddddd;
+		border: 1px solid #dddddd;
+		border-right: none;
+		text-align: left;
+		padding: 15px;
+	}
+
+	h2 {
+		font-size: 1.8em;
+		width: 300px;
+		text-align: left;
+	}
+
+	.quantity {
+		position: relative;
+		left: 3%;
+	}
+	
+	.updatebox {
+		height: 25px;
+	}
+	
+	input[type=submit] {
+		padding: 7px 20px; 
+		background-color: #262626 ; 
+		border: 0 none;
+		cursor: pointer;
+		-webkit-border-radius: 5px;
+		border-radius: 2px; 
+		color: #f2f2f2;
+	}
+
+	input[type=submit]:hover {
+		padding: 7px 20px; 
+		background-color: #888888;
+		border: 0 none;
+		cursor: pointer;
+		-webkit-border-radius: 5px;
+		border-radius: 2px; 
+		color: #f2f2f2;
+	}
+	
+	#checkout {
+		position: relative;
+		bottom: 50px;
+		float: left;
+		left: 70%;
+		font-size: 1.2em;
+	}
+	
+	.checkoutbutton {
+		margin-top: 10px;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+		section {
+		width: auto;
+		height: auto;
+	}
+
+	table {
+		border-collapse: collapse;
+		border-right: 1px solid #ddd;
+		border-left: 1px solid #ddd;
+		width: 90%;
+		margin-bottom: 100px;
+	}
+
+	.productTable {
+		display: block;
+		position: relative;
+		left: 5%;
+	}
+
+	td{
+		border-bottom: 1px solid #ddd;
+		padding: 8px;
+		text-align: left;
+	}
+
+	th {
+		background-color: #dddddd;
+		border: 1px solid #dddddd;
+		border-right: none;
+		text-align: left;
+		padding: 15px;
+	}
+
+	h2 {
+		font-size: 1.8em;
+		width: 300px;
+		text-align: left;
+	}
+
+	.quantity {
+		position: relative;
+		left: 3%;
+	}
+	
+	.updatebox {
+		height: 20px;
+	}
+	
+	input[type=submit] {
+		padding: 5px 15px;  
+		background-color: #262626 ; 
+		border: 0 none;
+		cursor: pointer;
+		-webkit-border-radius: 5px;
+		border-radius: 2px; 
+		color: #f2f2f2;
+	}
+
+	input[type=submit]:hover {
+		padding: 5px 15px; 
+		background-color: #888888;
+		border: 0 none;
+		cursor: pointer;
+		-webkit-border-radius: 5px;
+		border-radius: 2px; 
+		color: #f2f2f2;
+	}
+	
+	#checkout {
+		position: relative;
+		bottom: 50px;
+		float: left;
+		left: 55%;
+		font-size: 1.2em;
+	}
+	
+	.checkoutbutton {
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	section {
+		width: auto;
+		height: auto;
+	}
+
+	table {
+		border-collapse: collapse;
+		border-right: 1px solid #ddd;
+		border-left: 1px solid #ddd;
+		width: 95%;
+		margin-bottom: 100px;
+	}
+
+	.productTable {
+		padding-top: 75px;
+		display: block;
+		position: relative;
+		left: 2%;
+	}
+
+	td {
+		border-bottom: 1px solid #ddd;
+		text-align: left;
+		font-size: 8px;
+	}
+
+	th {
+		background-color: #dddddd;
+		border: 1px solid #dddddd;
+		border-right: none;
+		padding: 0 8px;
+		text-align: left;
+		font-size: 14px;
+	}
+
+	h2 {
+		font-size: 1.3em;
+		width: 150px;
+		text-align: left;
+	}
+
+	.quantity {
+		position: relative;
+		left: 3%;
+	}
+	
+	img.cartimg {
+		width: 80px;
+		height: 80px;
+	}
+	
+	td.productinfo {
+		width: 200px;
+	}
+	
+	.updatebox {
+		width: 50px;
+	}
+	
+	input[type=submit] {
+		font-size: 12px;
+		padding: 5px 5px; 
+		background-color: #262626 ; 
+		border: 0 none;
+		cursor: pointer;
+		-webkit-border-radius: 5px;
+		border-radius: 2px; 
+		color: #f2f2f2;
+		margin-top: 10px;
+	}
+
+	input[type=submit]:hover {
+		font-size: 12px;
+		padding: 5px 5px; 
+		background-color: #888888;
+		border: 0 none;
+		cursor: pointer;
+		-webkit-border-radius: 5px;
+		border-radius: 2px; 
+		color: #f2f2f2;
+		margin-top: 10px;
+	}
+	
+	#checkout {
+		position: relative;
+		bottom: 50px;
+		float: left;
+		left: 50%;
+		font-size: 1.1em;
+	}
+	
+	.checkoutbutton {
+		margin: 10px 0 0 100px;
+	}
+}
+

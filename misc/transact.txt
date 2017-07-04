@@ -1,0 +1,56 @@
+<?php 
+	session_start();
+	
+	$conn = mysqli_connect("localhost", "root", "", "shoedb" );
+	
+	$username = $_SESSION['MM_Username'];
+	
+	$filter =" WHERE username = '$username'";
+	$sqlOne = "SELECT * FROM cart_details" . $filter;
+	$cart = mysqli_query($conn, $sqlOne) or die(mysqli_error($conn)) ;
+
+    if (mysqli_num_rows($cart) > 0) {
+			while($row = mysqli_fetch_assoc($cart)) 
+			{
+				$productId = $row['product_id'];
+				
+				$sql2 = "SELECT * FROM product_info WHERE product_id = '$productId'";
+				
+				$product = mysqli_query($conn, $sql2) or die(mysqli_error($conn)) ;
+				
+				$product_info = mysqli_fetch_assoc($product);
+				$username = $row['username']
+				$productPrice = $product_info['product_price'];
+				$quantity = $row['quantity'];
+				$productImage = $product_info['product_image'];
+				$fullname = $_POST['fullname'];
+				$billingAddress = $_POST['billingAddress'];
+				$billingCity = $_POST['billingCity'];
+				$postalCode = $_POST['postalCode'];
+				$cardName = $_POST['cardName'];
+				$cardNo = $_POST['cardNo'];
+				$cvvCode = $_POST['cvvCode'];
+				$expDate = $_POST['expDate'];
+				$totalCost = $productPrice * $quantity;
+			
+			$sql3 = "INSERT INTO order_history(product_id, quantity, fullname, billingAddress, billingCity, postalCode, cardName, cardNo, cvvCode, expDate) VALUES ('$productId', '$quantity', '$fullname', '$billingAddress', '$billingCity', '$postalCode', '$cardName', '$cardNo', '$cvvCode', '$expDate')";
+			
+			$complete = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+			
+				if($complete)
+				{
+					$sql4 = "DELETE FROM cart_details WHERE id = $productId";
+					$deleteCart = mysqli_query($conn, $sql4);
+					
+					if($deleteCart)
+					{
+					header("Location: order_history.php");	
+					}
+				}
+			}
+		} 
+		
+			else {
+				echo "0 results";
+		}
+		?>

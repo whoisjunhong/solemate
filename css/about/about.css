@@ -1,0 +1,162 @@
+body {
+    font-family: 'Raleway', Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+@media only screen and (min-width: 769px){
+    section {
+        width: auto;
+        height: auto;
+		padding-bottom: 100px;
+    }
+    
+    .aboutus {
+        text-align: center;
+    }
+	
+	.aboutus h2 {
+		position: relative;
+		left: 40%;
+		width: 300px;
+		font-size: 2.5em;
+		text-align: center;
+	}
+    
+	p {
+		font-size: 1em;
+	}
+	
+    #aboutusimage {
+        width: 90%;
+    }
+	
+	img.teamimage {
+		width: 65%;
+	}
+	
+	.container {
+		 clear: both;
+		 padding: 50px 0 25px 30px;
+		 margin: 0px;
+		 overflow:hidden;
+	}
+
+	.col > img {
+		float: left;
+	}
+	
+	.span_1_of_3 {
+		float: left;
+		width: 30%;
+	}
+
+	.col {
+		display: block;
+		float: left;
+		margin: 1% 0 1% 1.6%;
+	}
+
+	.col:first-child {
+		margin-left: 0;
+	 }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+       section {
+        width: auto;
+        height: auto;
+		padding-bottom: 100px;
+    }
+    
+    .aboutus {
+        text-align: center;
+    }
+	
+	.aboutus h2 {
+		position: relative;
+		left: 30%;
+		width: 300px;
+		font-size: 1.8em;
+	}
+    
+	p {
+		font-size: 1em;
+	}
+	
+    #aboutusimage {
+        width: 80%;
+    }
+	
+	img.teamimage {
+		width: 50%;
+	}
+	
+	.container {
+		 clear: both;
+		 padding: 50px 0;
+		 margin: 0px;
+		 overflow:hidden;
+	}
+
+	.col > img {
+		float: left;
+	}
+	
+	.span_1_of_3 {
+		width: 30%;
+	}
+
+	.col {
+		display: block;
+		float: left;
+		margin: 1% 0 1% 1.6%;
+	}
+
+	.col:first-child {
+		margin-left: 0;
+	 }
+	
+}
+
+@media only screen and (max-width : 480px) {
+    section {
+		position: relative;
+		top: 100px;
+		margin-top: -15px;
+        width: auto;
+        height: auto;
+		text-align: center;
+		padding-bottom: 200px;
+    }
+    
+    .aboutus {
+        text-align: center;
+    }
+	
+	.aboutus h1 {
+		width: 200px;
+	}
+    
+    #aboutusimage {
+        width: 100%;
+    }
+	
+	img.teamimage {
+		width: 80%;
+	}
+	
+	.span_1_of_3 {
+		width: 30%;
+	}
+
+	.col {
+		display: block;
+		float: left;
+		margin: 1% 0 1% 1.6%;
+		font-size: 10px;
+	}
+
+	.col:first-child {
+		margin-left: 0;
+	 }
+}
+ 

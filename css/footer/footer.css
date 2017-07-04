@@ -1,0 +1,135 @@
+footer {
+    font-family: 'Raleway', Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+@media only screen and (min-width: 769px){
+    footer{
+		background-color: #000;
+		height: 200px;
+		width: 100%;
+		margin: 0px auto;
+        text-align: center;
+	}
+    
+    #footerlinks {
+        padding-top: 40px;
+        width: auto;
+    }
+    
+    #footerlinks a {
+        padding: 5px;
+        text-decoration: none;
+        font-size: 12px;
+        color: #c4c4c4;
+    }
+	
+	#footerlinks a:hover {
+		font-weight: 700;
+	}
+    
+    #socialmediafooter a {
+        text-decoration: none;
+    }
+	
+    img.footerimage {
+        width: 30px;
+        height: 30px;
+        padding: 10px 5px 0 5px;
+    }
+    
+    footer p {
+		padding-top: 5px;
+        color: #c4c4c4;
+        font-size: 8px;
+        width: 320px;
+		margin: 0px auto;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+	footer{
+		background-color: #000;
+		height: 200px;
+		width: auto;
+		margin: 0px auto;
+        text-align: center;
+	}
+    
+    #footerlinks {
+        padding-top: 40px;
+        width: auto;
+    }
+    
+    #footerlinks a {
+        padding: 5px;
+        text-decoration: none;
+        font-size: 12px;
+        color: #c4c4c4;
+		text-align: center;
+    }
+	
+    #footerlinks a:hover {
+		font-weight: 700;
+	}
+	
+    #socialmediafooter a {
+        text-decoration: none;
+    }
+    
+    img.footerimage {
+        width: 20px;
+        height: 20px;
+        padding: 10px 5px 0 5px;
+    }
+    
+    footer p {
+		padding-top: 5px;
+        color: #c4c4c4;
+        font-size: 8px;
+        width: 320px;
+		margin: 0px auto;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+	footer{
+		background-color: #000;
+		height: 200px;
+		width: auto;
+		margin: 0px auto;
+        text-align: center;
+	}
+    #footerlinks {
+        padding-top: 40px;
+        width: auto;
+    }
+    
+    #footerlinks a {
+        padding: 5px;
+        text-decoration: none;
+        font-size: 11px;
+        color: #c4c4c4;
+    }
+	
+	#footerlinks a:hover {
+		font-weight: 700;
+	}
+    
+    #socialmediafooter a {
+        text-decoration: none;
+    }
+	
+    img.footerimage {
+        width: 25px;
+        height: 25px;
+        padding: 10px 5px 0 5px;
+    }
+    
+    footer p {
+		padding-top: 5px;
+        color: #c4c4c4;
+        font-size: 8px;
+        width: 320px;		
+		margin: 0px auto;
+    }
+}

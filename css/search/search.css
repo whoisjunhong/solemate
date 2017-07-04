@@ -1,0 +1,252 @@
+@media screen and (min-width: 769px) {
+	section {
+		width: auto;
+		height: 700px;
+	}
+	
+	input [type=text] {
+		width: 50%;
+		box-sizing: border-box;
+		border: 2px solid #ccc;
+		border-radius: 4px;
+		font-size: 16px;
+		background-color: white;
+		background-image: url(../images/logos/searchlogo.png);
+		background-size: 20px 20px;
+		background-position: right;
+		background-repeat: no-repeat;
+		padding: 5px 20px 5px 45px;
+		-webkit-transition: width 0.4s ease-in-out;
+		transition: width 0.4s ease-in-out;
+    }
+
+    input [type=text]:focus {
+        width: 90%;
+    }
+	
+	/* Form wrapper styling */
+    .searchmobile {
+		padding-left: 100px;
+		position: relative;
+		margin-top: -18px;
+        width: 300px;
+    }
+
+    /* Form text input */
+    .searchmobile input {
+        width: 200px;
+        height: 19px; 
+        padding: 0 5px;
+        float: left;
+        border: 0;
+        background: #fff;
+		border: 1px solid #262626;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .searchmobile input:focus {
+        outline: 0;
+        background: #fff;
+        box-shadow: 0 0 1px #000;
+    }
+	
+    /* Form submit button */
+    .searchmobile button {
+        overflow: visible;
+        position: relative;
+        float: left;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        height: 21px;
+        width: 80px;
+        color: #f3f3f3;
+        background: #262626;
+        border-radius: 0 5px 5px 0;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    }
+
+    .searchmobile button:hover {
+        background: #4f4f4f;
+    }
+
+    .searchmobile button:active,.searchbar button:focus {
+        background: #fff;
+        outline: 0;
+    }
+
+    .searchmobile button::-moz-focus-inner {
+    /* remove extra button spacing for Mozilla Firefox */
+        border: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+	section {
+		width: auto;
+		height: 400px;
+	}
+	input [type=text] {
+		width: 50%;
+		box-sizing: border-box;
+		border: 2px solid #ccc;
+		border-radius: 4px;
+		font-size: 16px;
+		background-color: white;
+		background-image: url(../images/logos/searchlogo.png);
+		background-size: 20px 20px;
+		background-position: right;
+		background-repeat: no-repeat;
+		padding: 5px 20px 5px 45px;
+		-webkit-transition: width 0.4s ease-in-out;
+		transition: width 0.4s ease-in-out;
+    }
+
+    input [type=text]:focus {
+        width: 90%;
+    }
+	
+	/* Form wrapper styling */
+    .searchmobile {
+		position: relative;
+		left: 10%;
+		margin-top: -18px;
+        width: 300px;
+    }
+
+    /* Form text input */
+    .searchmobile input {
+        width: 200px;
+        height: 19px; 
+        padding: 0 5px;
+        float: left;
+        border: 0;
+        background: #fff;
+		border: 1px solid #262626;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .searchmobile input:focus {
+        outline: 0;
+        background: #fff;
+        box-shadow: 0 0 1px #000;
+    }
+	
+    /* Form submit button */
+    .searchmobile button {
+        overflow: visible;
+        position: relative;
+        float: left;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        height: 21px;
+        width: 80px;
+        color: #f3f3f3;
+        background: #262626;
+        border-radius: 0 5px 5px 0;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    }
+
+    .searchmobile button:hover {
+        background: #4f4f4f;
+    }
+
+    .searchmobile button:active,.searchbar button:focus {
+        background: #fff;
+        outline: 0;
+    }
+
+    .searchmobile button::-moz-focus-inner {
+    /* remove extra button spacing for Mozilla Firefox */
+        border: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+	section {
+		width: auto;
+		height: 400px;
+		padding-top: 150px;
+		text-align: center;
+	}
+	
+    input [type=text] {
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(../images/logos/searchlogo.png);
+    background-size: 20px 20px;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 5px 20px 5px 45px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    }
+
+    input [type=text]:focus {
+        width: 90%;
+    }
+	
+	/* Form wrapper styling */
+    .searchmobile {
+		position: absolute;
+		right: 17%;
+		margin-top: -18px;
+        width: 300px;
+    }
+
+    /* Form text input */
+    .searchmobile input {
+        width: 200px;
+        height: 19px; 
+        padding: 0 5px;
+        float: left;
+        border: 0;
+        background: #fff;
+		border: 1px solid #262626;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .searchmobile input:focus {
+        outline: 0;
+        background: #fff;
+        box-shadow: 0 0 1px #000;
+    }
+	
+    /* Form submit button */
+    .searchmobile button {
+        overflow: visible;
+        position: relative;
+        float: left;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        height: 21px;
+        width: 80px;
+        color: #f3f3f3;
+        background: #262626;
+        border-radius: 0 5px 5px 0;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    }
+
+    .searchmobile button:hover {
+        background: #4f4f4f;
+    }
+
+    .searchmobile button:active,.searchbar button:focus {
+        background: #fff;
+        outline: 0;
+    }
+
+    .searchmobile button::-moz-focus-inner {
+    /* remove extra button spacing for Mozilla Firefox */
+        border: 0;
+        padding: 0;
+    }
+}

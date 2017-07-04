@@ -1,0 +1,40 @@
+<?php 
+	session_start();
+	if(!isset($_SESSION['MM_Username']))
+	{
+		header('Location:../login_register/login_register.php');
+		$logStatus = "Login / Register";
+		$logStatusLink = '../login_register/login_register.php';
+		$adminStatus = "";
+		$adminStatus = "";
+	}
+	else
+	{
+		$username = $_SESSION['MM_Username'];
+		$profileLink = '../myaccount.php';
+		$logUser = "Welcome back!, $username";
+		$logStatus = "Logout";
+		$logStatusLink = '../logout.php';
+	}
+?>
+
+<?php 
+	$conn = mysqli_connect("localhost", "root", "","shoedb");
+	
+	$admin = "SELECT * FROM user_details WHERE username = '$username'";
+	
+	$search_result = mysqli_query($conn, $admin) or die (mysqli_error($conn));
+	
+	$row = mysqli_fetch_assoc($search_result);
+	$admin = $row['adminRights'];
+	
+	if($admin == 'T')
+		{
+			$adminStatus = "ADMINISTRATOR";
+			$adminStatusLink = '../admin.php';
+		}
+		else {
+			$adminStatus = "";
+			$adminStatusLink = "";
+		}
+?>

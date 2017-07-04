@@ -1,0 +1,96 @@
+@media screen and (max-width: 480px) {
+	section {
+		width: auto;
+		height: auto;
+	}
+
+	table {
+		border-collapse: collapse;
+		border-right: 1px solid #ddd;
+		border-left: 1px solid #ddd;
+		width: 95%;
+		margin-bottom: 100px;
+	}
+
+	.productTable {
+		padding-top: 75px;
+		display: block;
+		position: relative;
+		left: 2%;
+	}
+
+	td {
+		border-bottom: 1px solid #ddd;
+		text-align: left;
+		font-size: 12px;
+	}
+
+	th {
+		background-color: #dddddd;
+		border: 1px solid #dddddd;
+		border-right: none;
+		padding: 0 8px;
+		text-align: left;
+		font-size: 10px;
+	}
+
+	h2 {
+		font-size: 1.3em;
+		width: 150px;
+		text-align: left;
+	}
+
+	.quantity {
+		position: relative;
+		left: 3%;
+	}
+	
+	img.orderimg {
+		width: 80px!important;
+		height: 80px!important;
+	}
+	
+	td.productinfo {
+		width: 200px;
+	}
+	
+	.updatebox {
+		width: 50px;
+	}
+	
+	input[type=submit] {
+		font-size: 9px;
+		padding: 5px 5px; 
+		background-color: #262626 ; 
+		border: 0 none;
+		cursor: pointer;
+		-webkit-border-radius: 5px;
+		border-radius: 2px; 
+		color: #f2f2f2;
+		margin-top: 10px;
+	}
+
+	input[type=submit]:hover {
+		font-size: 9px;
+		padding: 5px 5px; 
+		background-color: #888888;
+		border: 0 none;
+		cursor: pointer;
+		-webkit-border-radius: 5px;
+		border-radius: 2px; 
+		color: #f2f2f2;
+		margin-top: 10px;
+	}
+	
+	#checkout {
+		position: relative;
+		bottom: 50px;
+		float: left;
+		left: 50%;
+		font-size: 14px;
+	}
+	
+	.checkoutbutton {
+		margin: 10px 0 0 90px;
+	}
+}

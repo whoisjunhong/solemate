@@ -1,0 +1,21 @@
+<?php 
+	session_start();
+	if(!isset($_SESSION['MM_Username']))
+	{
+		$logStatus = "Login / Register";
+		$logStatusLink = 'login_register/login_register.php';
+		$profileLink = "";
+		$logUser = "";
+		$adminStatus = "";
+		$adminStatusLink = "";
+		$username = "";
+	}
+	else
+	{
+		$username = $_SESSION['MM_Username'];
+		$profileLink = 'myaccount.php';
+		$logUser = "Welcome back!, $username";
+		$logStatus = "Logout";
+		$logStatusLink = 'logout.php';
+	}
+?>

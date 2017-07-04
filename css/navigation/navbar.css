@@ -1,0 +1,516 @@
+body {
+    font-family: font-family: 'Raleway', Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+@media screen and (min-width: 769px) {
+	.no-home {
+		display: none;
+	}
+	
+    #main-logo {
+        display: inline-block;
+		margin-left: 2%;
+    }
+
+    img.logo {
+        width: 25%;
+    }
+
+    #login-btn {
+        float: right;
+        margin-right: 10px;
+    }
+
+    #login-btn a {
+        text-decoration: none;
+        font-size: 13px;
+        color: #262626;
+        text-align: right;
+    }
+
+    #login-btn a:hover {
+        font-weight: 700;
+    }
+
+    .main-nav {
+        position: relative;
+        left: 18%;
+        bottom: 60px;
+    }
+
+    .main-nav li ul li {
+        border-top: 0;
+    }
+
+    ul {
+        list-style: none;
+		padding: 0;
+        margin: 0;
+        background: #fff;
+		z-index: 99999;
+    }
+
+    ul li {
+        display: block;
+        position: relative;
+        float: left;
+        background-color: #fff;
+        width: auto;
+		z-index: 99999;
+    }
+
+    /* This hides the dropdowns */
+    li ul {
+        display: none;
+    }
+
+    ul li a {
+		font-family: 'Roboto', sans-serif;
+        display: block;
+		font-weight: 400;
+        font-size: 1.1em;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #262626;
+        text-align: center;
+    }
+
+    ul li a:hover {
+        background-color: #262626;
+		color: #f2f2f2;
+        font-weight: 700;
+        border-radius: 3px;
+    }
+
+    /* Display the dropdown */
+    li:hover > ul {
+        display: block;
+        position: absolute;
+    }
+
+    li:hover li {
+        float: none;
+        width: auto;
+    }
+
+    li:hover a {
+        text-align: left;
+		width: auto;
+        background: #fff;
+    }
+
+    li:hover li a:hover {
+        background-color: #262626;
+		color: #f2f2f2;
+		width: auto;
+        border-radius: 3px;
+    }
+
+    /* Displays second level dropdowns to the right of the first level dropdown */
+    ul ul ul {
+        left: 100%;
+        top: 0;
+    }
+
+    #line {
+        margin-top: -30px;
+        width: auto;
+        background-color: #404040;
+        height: 1.5px;
+    }
+
+    img.navlogo {
+        display: none;
+    }
+
+    img.cartbox {
+        float: right;
+        position: relative;
+        top: -8px;
+        width: 30px;
+        right: 5px;
+    }
+
+    .cf:before,.cf:after {
+        content: "";
+        display: table;
+    }
+
+    .cf:after {
+        clear: both;
+    }
+	
+	#white {
+		display: none;
+	}
+	
+    /* Form wrapper styling */
+    .searchbar {
+		position: absolute;
+		right: 25%;
+		margin-top: -18px;
+        width: 300px;
+    }
+
+    /* Form text input */
+    .searchbar input {
+        width: 200px;
+        height: 19px; 
+        padding: 0 5px;
+        float: left;
+        border: 0;
+        background: #fff;
+		border: 1px solid #262626;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .searchbar input:focus {
+        outline: 0;
+        background: #fff;
+        box-shadow: 0 0 1px #000;
+    }
+	
+    /* Form submit button */
+    .searchbar button {
+        overflow: visible;
+        position: relative;
+        float: left;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        height: 21px;
+        width: 80px;
+        color: #f3f3f3;
+        background: #262626;
+        border-radius: 0 5px 5px 0;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    }
+
+    .searchbar button:hover {
+        background: #4f4f4f;
+    }
+
+    .searchbar button:active,.searchbar button:focus {
+        background: #fff;
+        outline: 0;
+    }
+
+    .searchbar button::-moz-focus-inner {
+    /* remove extra button spacing for Mozilla Firefox */
+        border: 0;
+        padding: 0;
+    }
+	
+	.active {
+		font-weight: 700;
+	}
+	
+	#breadcrumbs a {
+		text-decoration: none!important;
+		color: #262626!important;
+	}
+	
+	#breadcrumbs {
+		display: inline-block;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.no-home {
+		display: none;
+	}
+	
+    #main-logo {
+        display: inline-block;
+		padding-left: 1%;
+    }
+
+    img.logo {
+        width: 20%;
+    }
+
+    #login-btn {
+        float: right;
+        margin-right: 10px;
+    }
+
+    #login-btn a {
+        text-decoration: none;
+        font-size: 13px;
+        color: #262626;
+        text-align: right;
+    }
+
+    #login-btn a:hover {
+        font-weight: 700;
+    }
+
+    .main-nav {
+        position: relative;
+        left: 17%;
+        top: -50px;
+    }
+
+    .main-nav li ul li {
+        border-top: 0;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: #fff;
+		z-index: 99999;
+    }
+
+    ul li {
+        display: block;
+		border-radius: 5px;
+        position: relative;
+        float: left;
+        background-color: #fff;
+        width: auto;
+		z-index: 99999;
+    }
+
+    /* This hides the dropdowns */
+    li ul {
+        display: none;
+    }
+
+    ul li a {
+        display: block;
+        font-size: 13px;
+        padding: 10px 10px;
+        text-decoration: none;
+        color: #262626;
+        text-align: center;
+    }
+
+    ul li a:hover {
+		border-radius: 10px;
+        background-color: #262626;
+		color: #f2f2f2;
+        font-weight: 700;
+    }
+
+    /* Display the dropdown */
+    li:hover > ul {
+		border-radius: 5px;
+        display: block;
+        position: absolute;
+    }
+
+    li:hover li {
+        background-color: #fff;
+        float: none;
+        width: auto;
+    }
+
+    li:hover a {
+        background-color: #fff;
+    }
+
+    li:hover li a:hover {
+		border-radius: 5px;
+        background-color: #262626;
+		color: #f2f2f2;
+    }
+
+    /* Displays second level dropdowns to the right of the first level dropdown */
+    ul ul ul {
+        left: 100%;
+        top: 0;
+    }
+
+    #line {
+        margin-top: -30px;
+        width: auto;
+        background-color: #404040;
+        height: 1.5px;
+    }
+	
+	
+
+    img.navlogo {
+        display: none;
+    }
+
+    img.cartbox {
+        position: relative;
+        top: -4px;
+        right: 2px;
+        width: 22px;
+	}
+	
+	.cf:before,.cf:after {
+        content: "";
+        display: table;
+    }
+
+    .cf:after {
+        clear: both;
+    }
+	
+	#white {
+		display: none;
+	}
+
+    /* Form wrapper styling */
+    .searchbar {
+		position: absolute;
+		right: 32%;
+		margin-top: -16px;
+        width: 200px;
+    }
+
+    /* Form text input */
+    .searchbar input {
+        width: 130px;
+        height: 16px;
+        padding: 0 5px;
+        float: left;
+        border: 0;
+        background: #fff;
+		border: 1px solid #262626;
+        border-radius: 3px 0 0 3px;
+		font-size: 11px;
+    }
+
+
+    /* Form submit button */
+    .searchbar button {
+        overflow: visible;
+        position: relative;
+        float: left;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        height: 18px;
+        width: 50px;
+        color: #f3f3f3;
+        background: #262626;
+        border-radius: 0 5px 5px 0;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+		font-size: 11px;
+    }
+	
+	
+    .searchbar button:hover {
+        background: #4f4f4f;
+    }
+
+    .searchbar button:active,.searchbar button:focus {
+        background: #262626;
+        outline: 0;
+    }
+	
+	.active {
+		font-weight: 700;
+	}
+	
+	.active a {
+		text-decoration: none;
+		color: #262626;
+	}
+	
+	.active {
+		font-weight: 700;
+	}
+	
+	#breadcrumbs a {
+		text-decoration: none!important;
+		color: #262626!important;
+	}
+	
+	#breadcrumbs {
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 480px) {
+    #main-logo {
+        display: none;
+    }
+
+    img.logo {
+        width: 25%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+	
+	#navlogo {
+		position: fixed;
+		top: 20px;
+		left: 20%;
+		z-index: 999999;
+		white-space: nowrap;
+	}
+	
+	#navlogo a {
+		text-decoration: none;
+	}
+
+    img.navlogo {
+        margin: 0 50px;
+		min-width: 15px;
+        width: 6%;
+    }
+	
+	#white {
+		clear: both;
+		position: fixed;
+		top: -20px;
+		max-width: 470px;
+		width: 96.7%;
+		height: 50px;
+		z-index: 999;
+		background-color: #fff;
+	}
+
+    #login-btn {
+        display: none;
+    }
+
+    img.cartbox {
+        display: none;
+    }
+	
+	.searchbar {
+		display: none;
+	}
+	
+	#cartnone {
+		display: none;
+	}
+	
+	.active {
+		font-weight: 700;
+	}
+	
+	#breadcrumbs a {
+		font-size: 12px;
+		text-decoration: none!important;
+		color: #262626!important;
+	}
+	
+	#breadcrumbs {
+		position: relative;
+		top: 40px;
+		left: 5%;
+	}
+}
+
+/* Simple clearfix */
+ul:before,ul:after {
+    content: " ";
+/* 1 */
+    display: table;
+/* 2 */
+}
+
+ul:after {
+    clear: both;
+}
+  

@@ -1,0 +1,9 @@
+For the perfect pair of shoes that can go with any outfit, Skechers has brought your little kid the Gains slip-on. With the stylish design, he can wear them with a pair of jeans or slacks!
+
+ote
+
+$productsql = "SELECT * FROM product_info WHERE product_id = '$id'";
+			$product = ($conn, $prodcutsql);
+			$getProduct = mysqli_fetch_assoc($product);
+			$productPrice = $getProduct['product_price'];
+          	$totalCost = $productPrice * $qty;
